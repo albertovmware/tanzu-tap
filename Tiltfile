@@ -20,3 +20,4 @@ k8s_custom_deploy(
 
 k8s_resource('tanzu-tap', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tanzu-tap'}])
+allow_k8s_contexts('falberto-tap-admin@falberto-tap')
